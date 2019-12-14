@@ -1,0 +1,36 @@
+.navbar-portfolio {
+  background: transparent;
+  padding-top: 30px;
+}
+
+.navbar-portfolio .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-portfolio {
+  height: 60px;
+}
+
+.navbar-portfolio-white {
+  border-bottom: 3px solid #FFCB21;
+  width: 100%;
+  background-color: #111f4d;
+  transition: .5s ease;
+}
+
+a.nav-link {
+  color: white;
+}
+
+a.nav-link:hover {
+  color: #FFCB21;
+}
+
+a.navbar-brand {
+  font : normal 500 22px/1 'Josefin Sans', sans-serif;
+  color: white;
+  display: inline-block;
+}
+
+
+
