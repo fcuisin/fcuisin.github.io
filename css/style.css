@@ -1,4 +1,70 @@
-body {
-  background-color: #fafafa;
-  text-align: center;
+/* --- Import Components stylesheets --- */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+@import url("components/navbar.css");
+@import url("components/banner.css");
+@import url("components/about.css");
+
+#page {
+  background-color: #111f4d;
 }
+
+h1, h2, h3, p, a {
+  font : normal 300 20px/1 'Josefin Sans', sans-serif;
+  color: white;
+}
+
+.section-title {
+  font : normal 35px/1 'Josefin Sans', sans-serif;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.header-section-bar {
+  width: 70px;
+  height: 4px;
+  margin: 10px 0 100px 0;
+  background: #fff;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: hidden;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+}
+
