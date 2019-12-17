@@ -3,9 +3,15 @@
 @import url("components/navbar.css");
 @import url("components/banner.css");
 @import url("components/about.css");
+@import url("components/projects.css");
 
 #page {
   background-color: #111f4d;
+}
+
+html,body
+{
+  overflow-x: hidden;
 }
 
 h1, h2, h3, p, a {
@@ -24,17 +30,13 @@ h1, h2, h3, p, a {
 }
 
 .header-section-bar {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 70px;
   height: 4px;
   margin: 10px 0 100px 0;
   background: #fff;
-}
-
-.flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .slideInRight {
