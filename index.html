@@ -54,11 +54,11 @@
       </div>
     </div>
 
-    <section id="about">
-      <div class="flex container">
+    <section class="container-fluid" id="about">
+      <div class="container">
         <div class="row-fluid text-center section-title">About me</div>
-        <div class="header-section-bar waypoint"></div>
-        <div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+        <div class="header-section-bar"></div>
+        <div class="col-md-12 col-md-offset-1 col-xs-12 col-xs-offset-0">
           <div class="row justify-content-between">
             <div class="col-md-4 col-md-offset-0 col-sm-2 col-sm-offset-0 col-xs-6 col-xs-offset-3 about-image">
               <img src="css/components/images/profile-picture.jpg" alt="ferdinand cuisin">
@@ -70,8 +70,7 @@
                 <p>I stay in permanent watch on new design and UX via specialized blogs.</p>
               </div>
               <div class="about-heading mt-5"><p>Interests</p></div>
-              <div class="interest">
-                <div class="interest-wrapper">
+                <div class="row" style="margin-left: 0px;">
                   <div class="interest-card">
                     <div class="interest-icon-wrapper"><i class="fa fa-lg fa-2x fa-plane"></i></div>
                     <div class="interest-name"><p>Travels</p></div>
@@ -97,18 +96,63 @@
                     <div class="interest-name"><p>Photo</p></div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="projects">
-      <div class="flex container">
+
+    <section class="container-fluid" id="projects">
+      <div class="container">
         <div class="row-fluid text-center section-title">Projects</div>
-        <div class="header-section-bar waypoint"></div>
+        <div class="header-section-bar"></div>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <a class="project-card" href="http://traseu.co">
+              <img src="css/components/images/traseu.jpg">
+              <div class="project-detail">
+                <div class="m-2">
+                  <p>An app that allows you to quickly build a road-trip</p>
+                  <p class="project-detail-header">- Framework</p>
+                  <div class="row m-0">
+                    <p class="project-detail-btn">Ruby on Rails</p>
+                  </div>
+                  <p class="project-detail-header">- Technologies/Tools</p>
+                  <div class="row m-0">
+                    <p class="project-detail-btn">Javascript</p>
+                    <p class="project-detail-btn">Geocoding</p>
+                    <p class="project-detail-btn">Bootstrap</p>
+                    <p class="project-detail-btn">HTML</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="project-card" href="http://labellechaussure.herokuapp.com">
+              <img src="css/components/images/labellechaussure.jpg">
+              <div class="project-detail">
+                <div class="m-2">
+                  <p>Marketplace for sneakers lover</p>
+                  <p class="project-detail-header">- Framework</p>
+                  <div class="row m-0">
+                    <p class="project-detail-btn">Ruby on Rails</p>
+                  </div>
+                  <p class="project-detail-header">- Technologies/Tools</p>
+                  <div class="row m-0">
+                    <p class="project-detail-btn">Javascript</p>
+                    <p class="project-detail-btn">AJAX</p>
+                    <p class="project-detail-btn">Bootstrap</p>
+                    <p class="project-detail-btn">HTML</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
+
     <section id="skills">
       <div class="flex container">
         <div class="row-fluid text-center section-title">Skills</div>
