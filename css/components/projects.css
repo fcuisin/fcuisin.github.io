@@ -2,19 +2,6 @@
   position: relative;
 }
 
-.project-card {
-  max-height: 300px;
-  position: relative;
-  display: -webkit-box;
-}
-
-.project-card img {
-  width:100%;
-  height:100%;
-  object-fit: contain;
-  border-radius: 5px;
-}
-
 .project-detail {
   position: absolute;
   width:100%;
@@ -29,14 +16,9 @@
   font-size: 14px;
 }
 
-.project-detail-header p {
-  font-size: 14px;
-  font-weight: 500;
-}
-
 .project-detail:hover {
   opacity: 1;
-  transition: 0.5s ease-out;
+  transition: 0.6s ease-out;
   background-color: #000;
   opacity: 0.8;
   width: 100%;
@@ -46,8 +28,12 @@
   transition: 0.4s ease-out;
 }
 
-.project-detail-header {
-  text-transform: uppercase;
+.project-cardBar {
+  height: 2px;
+  width: 20px;
+  background: #fff;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .project-detail-btn {
@@ -55,6 +41,108 @@
   border-radius: 5px;
   padding: 8px;
   margin-right: 5px;
+}
+
+.project-card2 {
+  background: #111f4d;
+  height: 300px;
+  transition: 0.6s all ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* I used background url to allow me to change the height and width without needing extra css */
+
+.project-cardTop {
+  transition: 0.4s all ease;
+  height: 80%;
+}
+
+#project-cardTopImg1 {
+  background: url(images/traseu.jpg) no-repeat;
+  background-size: cover;
+}
+
+#project-cardTopImg2 {
+  background: url(images/labellechaussure.jpg) no-repeat;
+  background-size: cover;
+}
+
+.project-cardBottom {
+  height: 20%;
+  padding: 5px;
+  text-wrap: normal;
+  background-color: #111f4d;
+  transition: 0.4s all ease;
+}
+
+.project-cardText {
+  min-height: 100%;
+  padding-top: 15px;
+}
+
+.project-cardTextTop {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #FFCB21;
+  padding: 5px;
+  font-size: 14px;
+  color: #111f4d;
+}
+
+.project-cardText p {
+  font-size: 14px;
+}
+
+.project-cardTitle {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.project-cardInfo {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+
+a.project-cardTitle:hover {
+  color: black;
+}
+
+/* Hidding the entire so anything we put in will only show on hover */
+
+.project-cardHoverText {
+  visibility: hidden;
+}
+
+/* Hover affects */
+
+.project-card2:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Using className + hover followed by child element allows you to change child elements when parent is hovered */
+
+.project-card2:hover .project-cardHoverText {
+  visibility: visible;
+  transition: 0.4s all ease;
+  transition-delay: 0.1999s;
+}
+
+.project-card2:hover .project-cardBottom {
+  transition: 0.4s all ease;
+  height: 55%;
+  opacity: 1;
+}
+
+.project-card2:hover .project-cardTop {
+  height: 45%;
+  opacity: 0.8;
+  background-color: #000000;
+  transition: 0.4s all ease;
 }
 
 /* Smallest device */
