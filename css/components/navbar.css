@@ -18,6 +18,10 @@
   transition: .5s ease;
 }
 
+.navbar-toggler-icon {
+  background-color: white;
+}
+
 a.nav-link {
   color: white;
 }
