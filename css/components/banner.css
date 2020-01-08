@@ -89,3 +89,12 @@
      opacity: 0;
    }
  }
+
+ @media (min-width: 100px) and (max-width: 320px) {
+  .banner-title {
+    font-size: 50px;
+  }
+  h2.slideInRight {
+    font-size: 20px;
+  }
+}

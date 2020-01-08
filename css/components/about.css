@@ -161,3 +161,9 @@ a.skills-link:hover {
     width: 80%;
   }
 }
+
+@media (min-width: 100px) and (max-width: 320px) {
+  .skills-filter-category {
+    font-size: 15px;
+  }
+}
